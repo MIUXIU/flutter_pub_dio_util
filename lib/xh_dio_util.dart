@@ -177,7 +177,7 @@ class XHDioUtil {
           onSendProgress: onSendProgress,
           onReceiveProgress: onReceiveProgress);
       if (beanFromJson != null) {
-        Map<String, Object?> dataMap = json.decode(response.data.toString());
+        Map dataMap = json.decode(response.data.toString());
         dynamic resultBean = beanFromJson(dataMap);
         return resultBean;
       }
